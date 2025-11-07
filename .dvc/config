@@ -1,0 +1,9 @@
+[core]
+    remote = manivald-local
+    cache = /scratch/persistent/$USER/dvc-cache
+
+['remote "manivald-ssh"']
+    url = ssh://joosep@manivald.hep.kbfi.ee:/scratch/persistent/joosep/dvc/particlemind
+
+['remote "manivald-local"']
+    url = /scratch/persistent/joosep/dvc/particlemind
