@@ -1,0 +1,6 @@
+outs:
+- md5: 1e061a23483ff95a45c620fdd23db85d.dir
+  size: 39000735175
+  nfiles: 1000
+  hash: md5
+  path: p8_ee_tt_ecm365
