@@ -148,7 +148,7 @@ class CLDHits(IterableDataset):
                     cluster_to_cluster_hit_matrix["hit_idx"],
                     cluster_to_cluster_hit_matrix["cluster_idx"],
                     cluster_to_cluster_hit_matrix["weight"],
-                    max_hits = np.max(hit_idx)+1
+                    max_hits=np.max(hit_idx) + 1,
                 )
 
                 if self.by_event:
