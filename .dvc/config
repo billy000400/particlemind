@@ -1,0 +1,5 @@
+[core]
+    remote = cern-jpata
+
+['remote "cern-jpata"']
+    url = https://jpata.web.cern.ch/dvc/particlemind
