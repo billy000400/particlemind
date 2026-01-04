@@ -105,7 +105,10 @@ class CLDHits(IterableDataset):
         worker_info = torch.utils.data.get_worker_info()
         if worker_info is None:
             # Single-process data loading
-            files_to_process = self.parquet_files[: self.nfiles]
+            if self.nfiles > 0:
+                files_to_process = self.parquet_files[: self.nfiles]
+            else:
+                files_to_process = self.parquet_files
             logger.info(f"Processing {len(files_to_process)} files in single-process mode.")
 
         else:
